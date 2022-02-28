@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
     <link rel="stylesheet" href="calculator.css">
     <title>Calculator</title>
 </head>
 <body>
     <main>
         <section>
-            <div class="screen"></div>
-            <div class="button clear">AC</div>
-            <div class="button backspace">&xlarr;</div>
-            <div class="button divide">&divide;</div>
-            <div class="button multiply">&times;</div>
-            <div class="button seven">7</div>
-            <div class="button eight">8</div>
-            <div class="button nine">9</div>
-            <div class="button sub">-</div>
-            <div class="button four">4</div>
-            <div class="button five">5</div>
-            <div class="button six">6</div>
-            <div class="button sum">+</div>
-            <div class="button one">1</div>
-            <div class="button two">2</div>
-            <div class="button three">3</div>
-            <div class="button equal">=</div>
-            <div class="button zero">0</div>
-            <div class="button dot">.</div>
+            <div class="screen">
+                <div id="equation">0</div>
+                <div id="result">0</div> 
+                <!-- 15 digit max -->
+            </div>
+            <div class="button operator" onclick="mainFunc(this)">AC</div>
+            <div class="button operator" onclick="mainFunc(this)">DEL</div>
+            <div class="button operator" onclick="mainFunc(this)">^</div>
+            <div class="button operator" onclick="mainFunc(this)">%</div>
+            <div class="button operator" onclick="mainFunc(this)">(</div>
+            <div class="button operator" onclick="mainFunc(this)">)</div>
+            <div class="button operator" onclick="mainFunc(this)">/</div>
+            <div class="button operator" onclick="mainFunc(this)">X</div>
+            <div class="button num" onclick="mainFunc(this)">7</div>
+            <div class="button num" onclick="mainFunc(this)">8</div>
+            <div class="button num" onclick="mainFunc(this)">9</div>
+            <div class="button operator" onclick="mainFunc(this)">-</div>
+            <div class="button num" onclick="mainFunc(this)">4</div>
+            <div class="button num" onclick="mainFunc(this)">5</div>
+            <div class="button num" onclick="mainFunc(this)">6</div>
+            <div class="button operator" onclick="mainFunc(this)">+</div>
+            <div class="button num" onclick="mainFunc(this)">1</div>
+            <div class="button num" onclick="mainFunc(this)">2</div>
+            <div class="button num" onclick="mainFunc(this)">3</div>
+            <div class="button equal" onclick="mainFunc(this)">=</div>
+            <div class="button num zero" onclick="mainFunc(this)">0</div>
+            <div class="button num" onclick="mainFunc(this)">.</div>
         </section>
     </main>
     <script src="calculator.js"></script>

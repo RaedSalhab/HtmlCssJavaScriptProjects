@@ -16,6 +16,7 @@ main {
     background-color: rgb(75, 75, 75);
     border-radius: 10px;
     box-shadow: 10px 10px 8px rgba(50, 50, 50, 0.7);
+    z-index: 2;
 }
 
 section {
@@ -24,14 +25,13 @@ section {
     /* grid-template-columns: repeat(4, 1fr); */
     gap: 10px;
     grid-auto-rows: minmax(40px, auto);
-    grid-auto-columns: minmax(50px, auto);
+    grid-auto-columns: minmax(60px, auto);
 }
 
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(125, 125, 125);
     color: rgb(250, 250, 250);
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
@@ -40,8 +40,17 @@ section {
     box-shadow: 5px 5px 3px rgba(50, 50, 50, 0.7);
 }
 
+.operator {
+    background-color: rgb(50, 50, 50);
+}
+
+.num {
+    background-color: rgb(125, 125, 125);
+}
+
 .button:hover {
     background-color: rgb(100, 100, 100);
+    cursor: pointer;
 }
 
 .screen {
@@ -49,10 +58,22 @@ section {
     grid-column: 1 / 5;
     grid-row: 1 / 3;
     border-radius: 5px;
+    font-family: 'Seven Segment', sans-serif;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr;
 }
 
-.clear, .backspace, .multiply, .divide {
-    background-color: rgb(50, 50, 50);
+#equation {
+    font-size: 20px;
+    z-index: 2;
+}
+
+#result {
+    font-size: 30px;
+    z-index: 1;
 }
 
 .zero {
@@ -61,7 +82,7 @@ section {
 
 .equal {
     grid-column: 4;
-    grid-row: 6 / 8;
+    grid-row: 7 / 9;
     background-color: rgb(250, 75, 0);
 }
 

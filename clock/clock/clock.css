@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    justify-content: center;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 100px  75px;
+    gap: 20px;
+}
+
+#clock {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+
+#stopWatch {
+    font-size: 80px;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+.button {
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 8px 8px 5px rgb(75, 75, 75);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(100, 100, 100);
+}

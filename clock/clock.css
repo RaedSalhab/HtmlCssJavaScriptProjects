@@ -59,7 +59,7 @@ main {
 }
 
 .screen {
-    width: 450px;
+    width: 500px;
     font-size: 100px;
     font-weight: bold;
     text-align: center;
@@ -68,7 +68,7 @@ main {
     color: green;
     border-radius: 25px;
     font-family: 'Seven Segment', sans-serif;
-    grid-column: 1 / 4;                                          
+    grid-column: 1 / 4;
 }
 
 .button {
@@ -98,12 +98,12 @@ main {
     margin: 10px;
     border: 2px solid ;
     border-radius: 5px;
-    
+
 }
 
 .nav-link:hover {
-    box-shadow: 
-    1px 1px 2px 3px rgba(225, 225, 225, 0.3), 
+    box-shadow:
+    1px 1px 2px 3px rgba(225, 225, 225, 0.3),
     -1px -1px 2px 3px rgba(225, 225, 225, 0.3);
 }
 
@@ -112,19 +112,19 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
-  
+
   a:visited {
     color: rgb(225, 225, 225);
     background-color: transparent;
     text-decoration: none;
   }
-  
+
   a:hover {
     color: rgb(225, 225, 225);
     background-color: transparent;
     text-decoration: none;
   }
-  
+
   a:active {
     color: white;
     background-color: transparent;

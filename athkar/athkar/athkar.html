@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="athkar.css">
+    <link href="http://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+
+    <title>المسبحة</title>
+</head>
+<body>
+    <header>
+        <div id="logo">المسبحة الإلكترونية</div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <select name="selection" id="selection" onchange="selectFunc()">
+                    <option value="سبحان الله">
+                        سبحان الله
+                    </option>
+                    <option value="الحمد لله">
+                        الحمد لله
+                    </option>
+                    <option value="الله أكبر">
+                        الله أكبر
+                    </option>
+                    <option value="أستغفر الله">
+                        أستغفر الله
+                    </option>
+                    <option value="لا إله إلا الله">
+                        لاإله إلا الله
+                    </option>
+                    <option value="test"></option>
+                </select>
+            </div>
+            <div id="screen">0</div>
+            <div id="text" onclick="counterFunc()">سبحان الله</div>
+            <div id="reset" class="button" onclick="rsetFunc()">إعادة ضبط</div>
+        </section>
+    </main>
+    <script src="athkar.js"></script>
+</body>
+</html>

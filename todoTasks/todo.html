@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>TODO TASKS</title>
+</head>
+<body onload="viewTasksFunc()">
+    <header>
+        <div id="title">TODO TASKS</div>
+    </header>
+    <main>
+        <section>
+            <ul id="tasks-list">
+                <!-- tasks write by javascript -->
+            </ul>
+            <!-- hidden -->
+            <form action="" id="task-form">
+                <label for="task-title">Tsak Title: </label>
+                <input type="text" id="task-title" required><br>
+                <label for="task-disc">Tsak Discription: </label>
+                <textarea name="message" id="task-disc" rows="10" cols="50">
+                    Add Task Discripthon.
+                </textarea><br>
+                <label for="deadline">End Task:</label>
+                <input type="date" name="deadline" id="deadline"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <button id="add-task" onclick="viewFormFunc()">Add Task</button>
+        </section>
+    </main>
+    <script src="todo.js"></script>
+</body>
+</html>

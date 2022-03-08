@@ -14,8 +14,13 @@ main {
     height: auto;
     width: auto;
     background-color: rgb(75, 75, 75);
+    border: 2px solid rgba(50, 50, 50, 1);
     border-radius: 10px;
-    box-shadow: 10px 10px 8px rgba(50, 50, 50, 0.7);
+    box-shadow: 
+    3px 3px 1px rgba(50, 50, 50, 1),
+    6px 6px 1px rgba(50, 50, 50, 1),
+    10px 10px 1px rgba(50, 50, 50, 1),
+    15px 15px 1px rgba(50, 50, 50, 1);
     z-index: 2;
 }
 
@@ -82,10 +87,16 @@ section {
 
 .equal {
     grid-column: 4;
-    grid-row: 7 / 9;
+    grid-row: 6 / 8;
     background-color: rgb(250, 75, 0);
 }
 
 .equal:hover {
     background-color: rgb(225, 50, 0);
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: auto 100%;
+    }
 }
